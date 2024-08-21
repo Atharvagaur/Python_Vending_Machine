@@ -1,2 +1,2 @@
 # Python
- This is a place where you will find the python code for real life case scenarios.
+ This is a python code for a real life vending machine scenario.
