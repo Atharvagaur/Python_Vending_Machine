@@ -1,2 +1,2 @@
-# Python_Vending_Machine
- This is a simulation of a real life vending machine.
+# Python
+ This is a simulation of a real life use cases.
