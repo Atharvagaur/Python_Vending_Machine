@@ -1,0 +1,54 @@
+while True:
+    # Displaying the menu for the program
+    print("--------------Welcome to Vending Machine Simulator------------------")
+    print("The avalaible items are:")
+    print("Items   Cost")
+    print("Chips:  $2")
+    print("Cake:   $5")
+    print("Juice:  $3")
+    #Taking the input from the user for the choice of items
+    a=input("Input your choice of snacks:")
+    # Checking and comparing the user input with the available items and further proceding to payment for items
+    if a.lower()=="chips":
+        print("Enter $2 for your item:")
+        amount=int(input("Insert the money:"))
+        # Taking the money from the user and if its less than the total amount then, again taking money, dispencing the item and change
+        if amount>=2:
+            print(f"Dispensing your item, your change is: {amount-2}$")
+        elif amount<2:
+            c=int(input("Insert additional amount:"))
+            if amount+c>=2:
+                print(f"Dispensing your item, your change is: {(amount+c)-2}$")
+            # If even after taking money second time its less than cost of product, than cancelling the transaction
+            else:
+                print("Insufficient amount added, canceling youre transcation, Try again")
+    elif a.lower()=="cake":
+        print("Enter $5 for your item:")
+        amount=int(input("Insert the money:"))
+        if amount>=5:
+            print(f"Dispensing your item, your change is: {amount-5}$")
+        elif amount<5:
+            c=int(input("Insert additional amount:"))
+            if amount+c>=5:
+                print(f"Dispensing your item, your change is: {(amount+c)-5}$")
+            else:
+                print("Insufficient amount added, canceling youre transcation, Try again")
+    elif a.lower()=="juice":
+        print("enter $3 for your item:")
+        amount=int(input("Insert the money: "))
+        if amount>=3:
+            print(f"Dispensing your item, your change is {amount-3}$")
+        elif amount<3:
+            c=int(input("Insert additional amount:"))
+            if amount+c>=3:
+                print(f"Dispensing your item, your change is: {(amount+c)-3}$")
+            else:
+                print("Insufficient amount added, canceling youre transcation, Try again")
+    # Asking the user if he wants more items or want to exit using the if statement and break function
+    x=input("Do you want to get more items, Enter yes or no: ")
+    if x.lower()=="no":
+        print("")
+        print("Thank you for using the vending machine")
+        print("")
+        break
+
