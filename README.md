@@ -1,2 +1,2 @@
 # Python
- This is a simulation of a real life use cases.
+ This is a place where you will find the python code for real life case scenarios.
